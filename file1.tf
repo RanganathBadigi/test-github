@@ -1,16 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "<=3.80,>=3.80"
-    }
-  }
-}
-provider "azurerm" {
-  features { }
-  skip_provider_registration = true
-}
-
 resource "azurerm_resource_group" "example" {
   name = "ranga-rg-lab"
   location = "eastus"
